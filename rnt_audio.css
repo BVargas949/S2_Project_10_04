@@ -13,4 +13,20 @@
 
 */
 
+/* The audio slector was used to change the styles of the audio player that the browser will render. The tag was rendered as a block element, given a shadow to make it pop out, changed to take up 80% of the the element it was nested in with respect the horizontal direction, and space was added to seperate it from surrounding elements.(20 pixel units on the top and bottom, centered horizontally.)   */
+
 /* Audio Styles */
+audio {
+    display: block;
+    box-shadow: 8px 8px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+/* This psuedo attribute was used to affect older browsers. The specifiaction that is going to displayed on older browsers is changing the background color to a lexender-ish option. */
+audio::-webkit-media-controls-panel {
+    background-color: rgb(128, 128, 255);
+}

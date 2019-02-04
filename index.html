@@ -37,8 +37,7 @@
         </nav>
     </header>
 
-    <!-- The iframe element was used to bring a video from the exterior and place a frame around its box. -->
-
+    <!-- The iframe element was used to bring a video from an exterior server and place a frame around its box. A fig caption was used to give the video a "caption" detailing the author and title.-->
     <figure>
         <iframe src="https://www.youtube.com/embed/ie2Mspukx14" frameborder="0"></iframe>
         <figcaption>Robert Frost reads <cite>The Road Not Taken</cite></figcaption>
@@ -74,7 +73,13 @@
 
         <section class="poem">
             <h2>Fire and Ice</h2>
-
+            <!-- The audio and source elements were used to render different audio files. The audio formats include mp3 and ogg. The embed element was used if the other audio formats did not work with the users browser. A messahg using paragraph tags was written if none of the audio players work with the users browser. -->
+            <audio controls>
+                <source src="rnt_fireice.mp3" type="audio/mp3">
+                <source src="rnt_fireice.ogg" type="audio/ogg">
+                <embed src="rnt_fireice.mp3" type="audioa/mp3" controller autoplay showcontrols autostart />
+                <p><em>If no embeded audio is supported, the player will not run.</em></p>
+            </audio>
             <p>
                 Some say the world will end in fire,<br />
                 Some say in ice.<br />
@@ -90,10 +95,13 @@
 
         <section class="poem">
             <h2>Devotion</h2>
-            <!-- The audio and source elements were used to render different audio files. The audio formats include mp3 and ogg. -->
-            <audio src="" controls>
-                <source src="rnt_fireice.mp3" type="video/mp3">
-                <source src="rnt_fireice.ogg" type="video/ogg">
+            <!-- The exact same elements and attributes were used as the "fire and ice" audio elemet. This was used to create a similar audio format for the user to hear, but with a different audio file. -->
+            <!-- The audio and source elements were used to render different audio files. The audio formats include mp3 and ogg. The embed element was used if the other audio formats did not work with the users browser. A messahg using paragraph tags was written if none of the audio players work with the users browser. -->
+            <audio controls>
+                <source src="rnt_devotion.mp3" type="audio/mp3">
+                <source src="rnt_devotion.ogg" type="audio/ogg">
+                <embed src="rnt_devotion.mp3" type="audio/mp3" controller autoplay showcontrols autostart />
+                <p><em>If no embeded audio is supported, the player will not run.</em></p>
             </audio>
             <p>
                 The heart can think of no devotion<br />
